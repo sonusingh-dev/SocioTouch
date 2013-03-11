@@ -1,0 +1,95 @@
+<LinearLayout android:id="@+id/main_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android" style="@style/main_layout">
+	<LinearLayout android:id="@+id/header_layout" style="@style/header_layout">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/header">
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/header_left" android:layout_height="wrap_content">
+				<ImageView android:id="@+id/imageView1" style="@style/img_logo" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/temp_layout"
+				android:layout_alignParentRight="true" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:orientation="vertical"
+				android:gravity="right">
+				<TextView android:id="@+id/lblTemp" android:gravity="right"
+					android:text="34°C" style="@style/lbl_title" />
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/top_bar_layout" style="@style/top_bar_layout" />
+
+	<LinearLayout android:id="@+id/body_layout" style="@style/body_layout"
+		android:orientation="vertical">
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:gravity="center" android:minHeight="300px"
+			android:orientation="vertical">
+			<LinearLayout android:orientation="vertical"
+				android:layout_height="fill_parent" android:layout_width="wrap_content"
+				android:padding="5px" android:gravity="center_horizontal"
+				android:minWidth="500dp">
+				<EditText android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:hint="User Type"
+					android:id="@+id/txtUserType" />
+				<EditText android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:hint="Password"
+					android:inputType="textPassword" android:id="@+id/txtPassword" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:gravity="center" android:minHeight="200px">
+			<TableLayout android:id="@+id/tableLayout1"
+				android:layout_height="wrap_content" android:layout_width="wrap_content">
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="01"
+						android:minWidth="48px" android:minHeight="48px" android:id="@+id/btn01"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="02" android:id="@+id/btn02"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="03" android:id="@+id/btn03"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="04" android:id="@+id/btn04"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="05" android:id="@+id/btn05"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="06" android:id="@+id/btn06"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="07" android:id="@+id/btn07"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="08" android:id="@+id/btn08"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="09" android:id="@+id/btn09"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="10" android:id="@+id/btn10"></Button>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:minWidth="48px"
+						android:minHeight="48px" android:text="None" android:id="@+id/btnNone"></Button>
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/bottom_nav_layout"
+		android:layout_height="wrap_content" android:layout_width="match_parent" />
+
+	<LinearLayout android:id="@+id/bottom_bar_layout" style="@style/bottom_bar_layout" />
+
+	<LinearLayout android:id="@+id/footer_layout" style="@style/footer_layout">
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/imgAds" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:gravity="center">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_width="wrap_content"
+		android:padding="5px"
+		android:gravity="center_horizontal" android:minWidth="500dp">
+		<TextView style="@style/lbl_msg" android:text="Sign in to my SocioTouch to save Favorites" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Email"
+			android:inputType="textEmailAddress" android:id="@+id/txtEmail" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Password"
+			android:inputType="textPassword" android:id="@+id/txtPassword" />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Sign In"
+			android:id="@+id/btnSignIn" />
+		<Button android:text="Forgot Password" style="@style/btn_link"
+			android:id="@+id/btnForgot" />
+		<TextView style="@style/lbl_msg" android:text="Don't have a SocioTouch account?" />
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Sign Up"
+			android:id="@+id/btnSignUp" />
+		<Button android:text="Why Sign Up?" style="@style/btn_link"
+			android:id="@+id/btnWhy" />
+	</LinearLayout>
+
+</LinearLayout>

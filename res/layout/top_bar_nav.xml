@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/top_bar"
+	android:layout_width="match_parent">
+	<RelativeLayout android:id="@+id/relativeLayout2"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:gravity="center"
+			android:layout_height="wrap_content" android:padding="10dp">
+			<TextView android:layout_height="wrap_content" android:id="@+id/lblTitle"
+				android:text="Title" android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:id="@+id/btnBack"
+			android:text="Back" style="@style/btn_gray" android:layout_height="wrap_content"
+			android:padding="8dp" />
+		<EditText android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:id="@+id/txtSearch" android:hint="Search"
+			android:minWidth="200px"
+			android:maxWidth="200px" android:maxHeight="32px" android:drawableRight="@drawable/search" android:minLines="1"/>
+	</RelativeLayout>
+</LinearLayout>

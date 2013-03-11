@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/bottom_bar"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:gravity="center">
+	<RelativeLayout android:id="@+id/relativeLayout1" style="@style/bottom_nav_layout">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:gravity="center"
+			android:layout_height="wrap_content" android:padding="10dp">
+			<TextView android:text="Grand Total: "
+				android:layout_height="wrap_content" android:id="@+id/textView1"
+				android:layout_width="wrap_content" style="@style/lbl_data"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="Amount"
+				android:id="@+id/textView2" style="@style/lbl_data"></TextView>
+		</LinearLayout>
+		<Button android:text="Cash Payment"
+			android:layout_alignParentLeft="true" android:id="@+id/btnCashPay"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="Card Payment" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:id="@+id/btnCardPay"></Button>
+	</RelativeLayout>
+</LinearLayout>
+

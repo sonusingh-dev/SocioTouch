@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center">
+	<ImageButton style="@style/img_cust_home" android:id="@+id/imgBtnCustItem" />
+</LinearLayout>

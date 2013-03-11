@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/bottom_bar"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:gravity="center">
+	<RelativeLayout android:id="@+id/relativeLayout1" style="@style/bottom_nav_layout">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:gravity="center"
+			android:layout_height="wrap_content">
+			<Button android:id="@+id/btnOrder" android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+		</LinearLayout>
+		<Button android:text="&lt;&lt;" android:layout_alignParentLeft="true"
+			android:id="@+id/btnPre" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Button android:text="&gt;&gt;" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:id="@+id/btnNext" />
+	</RelativeLayout>
+</LinearLayout>

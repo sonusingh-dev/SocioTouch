@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="match_parent" android:padding="5px"
+		android:gravity="center_horizontal" android:layout_width="wrap_content" android:minWidth="500dp">
+		<TextView style="@style/lbl_msg" android:text="Create your My SocioTouch account" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Email" android:id="@+id/txtEmail"
+			android:inputType="textEmailAddress" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Password (8 character minimum)"
+			android:id="@+id/txtPassword" android:inputType="textPassword" />
+		<EditText android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:hint="Confirm Password"
+			android:id="@+id/txtConfirmPass" android:inputType="textPassword" />
+		<EditText android:hint="Zip code" android:layout_width="match_parent"
+			android:inputType="number" android:layout_height="wrap_content"
+			android:id="@+id/EditText01" android:maxLength="6">
+		</EditText>
+		<EditText android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:id="@+id/txtNumber"
+			android:inputType="phone" android:maxLength="10" android:hint="Contact Number" />
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="0">
+			<TableRow android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center">
+				<TextView android:text="Gender" style="@style/lbl_msg"
+					android:id="@+id/lblGender" />
+				<RadioGroup android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="horizontal">
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Male"
+						android:id="@+id/radMale" android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/dkgray"/>
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Female"
+						android:id="@+id/radFemale" android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/dkgray"/>
+				</RadioGroup>
+			</TableRow>
+		</TableLayout>
+		<CheckBox android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/chkNews"
+			android:text="Yes, email me daily Mumbai city food news" android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/dkgray"/>
+		<CheckBox android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="Yes, email me other offer &amp; promotions"
+			android:id="@+id/chkPromo" android:textAppearance="@android:style/TextAppearance.Medium" android:textColor="@color/dkgray"/>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Sign Up"
+			android:id="@+id/btnSignUp" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:gravity="center_horizontal">
+			<TextView android:text="By clicking sign up your agree to the "
+				style="@style/lbl_msg" />
+			<Button android:text="Terms of serving" style="@style/btn_link"
+				android:id="@+id/btnTerms" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

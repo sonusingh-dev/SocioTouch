@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageButton
+        android:id="@+id/imgBtnItem"
+        style="@style/img_menu_item" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblMenuName"
+            style="@style/lbl_menu_name"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/lblMenuDesc"
+            style="@style/lbl_menu_desc"
+            android:text="Description" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/imgBtnDown"
+                style="@style/btn_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtQ"
+                android:layout_toRightOf="@+id/txtQ"
+                android:src="@drawable/down" />
+
+            <ImageButton
+                android:id="@+id/imgBtnUp"
+                style="@style/btn_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtQ"
+                android:layout_toRightOf="@+id/txtQ"
+                android:src="@drawable/up" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgMenuType"
+        style="@style/img_menu_type" />
+
+</LinearLayout>

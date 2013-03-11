@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center">
+	<TableLayout android:id="@+id/tableLayout1"
+		android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Name" style="@style/lbl_data"></TextView>
+			<EditText android:id="@+id/editText1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:hint="Your Name" android:minWidth="300dp" android:maxLength="30">
+			</EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Card Number" style="@style/lbl_data"></TextView>
+			<EditText android:id="@+id/editText2" android:layout_width="wrap_content"
+				android:inputType="number" android:layout_height="wrap_content"
+				android:hint="Card Number" android:maxLength="14" android:minWidth="300dp"></EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<RadioGroup android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<RadioButton android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/dkgray"
+					android:textAppearance="@android:style/TextAppearance"
+					android:text="Visa" android:id="@+id/radVisa" />
+				<RadioButton android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/dkgray"
+					android:textAppearance="@android:style/TextAppearance"
+					android:text="MasterCard" android:id="@+id/radMaster" />
+			</RadioGroup>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Submit"
+				android:id="@+id/btnSubmit"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TableRow>
+	</TableLayout>
+
+</LinearLayout>
